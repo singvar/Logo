@@ -86,7 +86,7 @@
   .owl-nav button.owl-prev,
   .owl-nav button.owl-next {
     display: none;
-    background: url("/img/arrow.png") no-repeat;
+    background: url("/../../img/arrow.png") no-repeat;
     background-color: #f8f5f2;
     background-size: cover;
     border-radius: 50%;
@@ -97,7 +97,7 @@
     transform: translateY(-50%);
 
     &:hover, &:active {
-      background: url("/img/arrow.png") no-repeat;
+      background: url("/../../img/arrow.png") no-repeat;
       background-color: #f8f5f2;
       background-size: cover;
       opacity: 0.5;
