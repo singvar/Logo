@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Logo</title>
   <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+  <script src="js/all.min.js"></script>
 </head>
 
 <body>
@@ -541,10 +542,68 @@
           </ul>
           <button class="product__extension">See more</button>
         </div>
+        <div data-modal class="bag">
+          <div class="bag__card">
+            <svg>
+              <use xlink:href="img/symbol/sprite.svg#shopping-cart"></use>
+            </svg>
+            <div class="bag__text">My bag</div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__wrap">
+          <h2 class="advantages__title_hide">Our advantages</h2>
+          <div class="advantages__element">
+            <h3 class="advantages__title">Execution time
+              <svg class="advantages__svg">
+                <use xlink:href="img/symbol/sprite.svg#clock"></use>
+              </svg>
+            </h3>
+            <p class="advantages__text">We od our to execute all orders within 24-48h after payoff</br>(+delivery time)
+            </p>
+          </div>
+          <div class="advantages__element">
+            <h3 class="advantages__title">Delivery
+              <svg class="advantages__svg">
+                <use xlink:href="img/symbol/sprite.svg#truck"></use>
+              </svg>
+            </h3>
+            <p class="advantages__text"></br>3-5 working days UPS courier
+            </p>
+          </div>
+          <div class="advantages__element">
+            <h3 class="advantages__title">Payments
+              <svg class="advantages__svg">
+                <use xlink:href="img/symbol/sprite.svg#credit-card"></use>
+              </svg>
+            </h3>
+            <p class="advantages__text">Quick payments with PayPal</br>Bank transfer
+            </p>
+          </div>
+          <div class="advantages__element">
+            <h3 class="advantages__title">Returns
+              <svg class="advantages__svg">
+                <use xlink:href="img/symbol/sprite.svg#arrows-reverse"></use>
+              </svg>
+            </h3>
+            <p class="advantages__text">Safe shopping with possibility to return within 14 days
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="modal">
+        <div class="modal__content">
+          <div class="modal__close">
+            <svg data-close>
+              <use xlink:href="img/symbol/sprite.svg#modal-arrow"></use>
+            </svg>
+          </div>
+          <div class="modal__title">Shopping bag</div>
+        </div>
       </section>
     </div>
   </div>
-  <script src="js/all.min.js"></script>
 </body>
 
 </html>

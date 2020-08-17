@@ -1,0 +1,25 @@
+$bagBg: #7f7f7f;
+
+.bag__card {
+  width: 45px;
+  height: 60px;
+  position: fixed;
+  right: 0;
+  top: 125px;
+  padding-top: 15px;
+  text-align: center;
+  background-color: $bagBg;
+  cursor: pointer;
+
+  svg {
+    fill: $bg;
+    width: 30px;
+    height: 30px;
+  }
+
+  .bag__text {
+    font-size: 10px;
+    color: $bg;
+  }
+
+}

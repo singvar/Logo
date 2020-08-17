@@ -1,0 +1,56 @@
+$advantagesBg: #f1f1f1;
+
+.advantages__title_hide {
+  @include visually-hidden;
+}
+
+.advantages__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  background-color: $advantagesBg;
+}
+
+.advantages__element {
+  width: 230px;
+}
+
+.advantages__title {
+  position: relative;
+  margin: 5px 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  color: $colorText;
+
+  .advantages__svg {
+    position: absolute;
+    right: -20%;
+    top: 50%;
+    height: 27px;
+    fill: $colorText;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.advantages__text {
+  vertical-align: text-top;
+  margin-top: 25px;
+  font-size: 13px;
+  color: $colorText;
+}
+
+@media (max-width: 1150px) {
+
+  .advantages__title {
+
+    .advantages__svg {
+      right:-100%;
+      top: 50%;
+    }
+
+  }
+
+}

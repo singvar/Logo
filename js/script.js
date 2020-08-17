@@ -16,4 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     tabs('.product__title', '.product__list', '.product__headline', 'product__title_active');
 
+    //Modal
+
+    modal('.modal', '[data-modal]');
+
 });
