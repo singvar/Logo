@@ -1,0 +1,149 @@
+$descBg: #e1e1e1;
+
+.product__wrap {
+  padding-bottom: 25px;
+}
+
+.product__title-hide {
+  @include visually-hidden;
+}
+
+.product__headline {
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #d9d9d9;
+}
+
+.product__title {
+  height: 20px;
+  margin: 0;
+  margin-right: 35px;
+  background-color: $bg;
+  border: none;
+  box-shadow: none;
+  font-size: 15px;
+  font-weight: 900;
+  display: block;
+  cursor: pointer;
+  color: $black;
+  text-transform: uppercase;
+  line-height: 1.1;
+
+
+  &:hover, &:active, &:focus {
+    color: $focusText;
+    transition-property: color;
+    transition-duration: 400ms;
+  }
+
+}
+
+.product__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 80px 0 25px 0;
+  list-style: none;
+}
+
+.product__element {
+  width: 290px;
+
+  .product__img {
+    padding: 30px 30px 0 30px;
+  }
+
+  .product__text {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    color: $colorText;
+    text-align: center;
+  }
+
+  .product__cost {
+    margin: 0;
+    padding-bottom: 15px;
+    font-weight: 700;
+    text-align: center;
+    color: $focusText;
+  }
+
+  img {
+    width: 100%;
+    background-size: cover;
+  }
+
+  svg {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    fill: $bg;
+    width: 15px;
+    height: 15px;
+  }
+
+  button {
+    position: relative;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    color: $bg;
+    background-color: $bg;
+  }
+
+  &:hover, &:focus-within {
+    box-shadow: 0 0 5px rgba(0,1,1,.5);
+
+    button {
+      background-color: $focusText;
+      transition-property: background-color;
+      transition-duration: 600ms;
+    }
+
+    .product__text {
+      background-color: $descBg;
+      transition-property: background-color;
+      transition-duration: 600ms;
+    }
+
+    .product__cost {
+      background-color: $descBg;
+      transition-property: background-color;
+      transition-duration: 600ms;
+    }
+  }
+
+}
+
+.product__extension {
+  width: 110px;
+  padding: 10px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid $black;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: $colorText;
+  background-color: $bg;
+
+  &:hover, &:focus {
+    color: $bg;
+    background-color: $colorText;
+    transition-property: color, background-color;
+    transition-duration: 500ms;
+  }
+}
